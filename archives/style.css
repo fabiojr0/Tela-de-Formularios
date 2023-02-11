@@ -1,0 +1,149 @@
+body
+{
+  margin: 0;
+  padding: 0;
+  font-family: 'Barlow Condensed', sans-serif;
+  background-color:#27272b;
+  color:black;
+  
+}
+
+.container{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:25px 50px;
+} 
+.card_imagem img{
+  width:500px;
+  height:500px;
+}
+.card{
+  border-radius:20px;
+  background-color:#c8E3f6;
+  width:1000px;
+  height:600px;
+  display:flex;
+  align-items:center;
+  flex-direction:row;
+}
+.card_imagem{
+  background: rgb(246,245,255);
+background: linear-gradient(180deg, rgba(246,245,255,1) 15%, rgba(79,164,250,1) 68%);
+  width:60%;
+  height:100%;
+  border-radius:20px 0px 0px 20px;
+  display:flex;
+  align-items:center;
+  flex-direction:column;
+  border:1px solid #4fa4fa;
+}
+.card_form{
+  background-color:#f0f5fb;
+  border:1px solid #4fa4fa;
+  width:40%;
+  height:100%;
+  border-radius:0px 20px 20px 0px;
+  display:flex;
+  align-items:center;
+  justify-content:space-around;
+  flex-direction:column;
+}
+.card_form img{
+  display:none;
+}
+
+form{
+  display:flex;
+  align-items:center;
+  justify-content: space-around;
+  flex-direction:column;
+  border-radius:15px;
+  width:80%;
+  height:75%;
+  background-color:rgba(79, 164, 250, 0.4); 
+  color: #000000;
+  font-weight:600;
+  font-size:20px;
+}
+.move{
+  position:relative;
+}
+.input{
+  padding: 10px 30px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  border: 0px;
+  border-radius:25px;
+  font-weight:800;
+}
+.placeholder{
+  position: absolute;
+  top: 11px;
+  left: 8px;
+  font-size: 14px;
+  padding: 0px 5px;
+  color: rgb(128,128,128,0.3);
+  transition: 0.3s;
+  pointer-events: none;
+  border-radius:15px;
+}
+.input:focus ~ .placeholder,.input:hover ~ .placeholder{
+  top: -8px;
+  color: #000000;
+  background-color: #fff;
+}
+
+.forms{
+  display:flex;
+  align-items:center;
+  justify-content: space-around;
+  flex-direction:column;
+  height:80%;
+}
+.button {
+  padding: 6px 10px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #000;
+  background-color:white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 6px #999;
+}
+.buttons{
+  display:flex;
+  align-items:center;
+  justify-content: space-around;
+  flex-direction:row;
+  width:100%;
+}
+
+.button:hover {background-color:#cfc9c9}
+
+.button:active {
+  background-color:#cfc9c9;
+  box-shadow: 0 5px #666;
+  transform: translateY(3px);
+}
+span{
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+span:hover{
+  color:#323333;
+}
+span:active{
+  color:#a02613;
+}
+h3{
+  text-align:center;
+}
+
+#telaLogin, #telaForgot, #telaRegister{
+  display:none;
+}
